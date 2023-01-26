@@ -12,7 +12,7 @@ pipeline{
         }
     stage("deploy-dev"){
       steps{
-        sshagent(['tomcat-dev1'])
+        sshagent(['tomcat'])
         sh """
           scp -o StrictHostKeyChecking=no target/*.jar lorna@192.168.100.72:/opt/tomcat/webapps/
           ssh lorna@192.168.100.72 /opt/tomcat/bin/shutdown.sh
