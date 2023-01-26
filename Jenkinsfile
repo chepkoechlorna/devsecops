@@ -14,7 +14,7 @@ pipeline{
       steps{
         sshagent(['tomcat']){
         sh """
-          scp -o StrictHostKeyChecking=no target/*.jar lorna@192.168.100.72:/opt/tomcat/webapps/
+          scp lorna@192.168.100.72:/opt/tomcat/webapps/
           ssh lorna@192.168.100.72 /opt/tomcat/bin/shutdown.sh
           ssh lorna@192.168.100.72 /opt/tomcat/bin/startup.sh
            """
