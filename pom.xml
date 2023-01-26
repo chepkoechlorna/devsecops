@@ -58,8 +58,7 @@
 			       <plugin>
 			                <groupId>org.apache.tomcat</groupId>
                                         <artifactId>tomcat</artifactId>
-                                        <version>9.0.0.M1</version>
-                                        <type>pom</type>
+				        <version>9.0.0.M1</version>
 	                                <configuration>
 			                    <url>http://192.168.100.72:8080/manager</url>
 			                    <server>tomcat</server>
