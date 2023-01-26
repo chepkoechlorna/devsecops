@@ -8,6 +8,7 @@ pipeline{
     stage('Build'){
       steps{
         sh "mvn clean install"
+        sh "mvn tomcat9:deploy"
         }
         }
     stage('SonarQube analysis'){
