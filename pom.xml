@@ -57,8 +57,8 @@
 			</plugin>
 			       <plugin>
 			                <groupId>org.apache.tomcat</groupId>
-                                        <artifactId>tomcat</artifactId>
-				        <version>9.0.0.M1</version>
+                                        <artifactId>tomcat7-maven-plugin</artifactId>
+				        <version>2.2</version>
 	                                <configuration>
 			                    <url>http://192.168.100.72:8080/manager</url>
 			                    <server>tomcat</server>
